@@ -24,7 +24,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 
 public abstract class AEBaseItem extends Item {
 
@@ -46,11 +45,6 @@ public abstract class AEBaseItem extends Item {
     public String toString() {
         String regName = this.getRegistryName() != null ? this.getRegistryName().getPath() : "unregistered";
         return this.getClass().getSimpleName() + "[" + regName + "]";
-    }
-
-    @Override
-    public boolean isBookEnchantable(final ItemStack itemstack1, final ItemStack itemstack2) {
-        return false;
     }
 
 }
