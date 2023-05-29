@@ -38,7 +38,7 @@ public class ControllerValidator implements IGridVisitor {
     /**
      * Maximum size of controller structure on each axis.
      */
-    public static final int MAX_SIZE = 7;
+    public static final int MAX_SIZE = 256;
 
     private boolean valid = true;
     private int found = 0;
